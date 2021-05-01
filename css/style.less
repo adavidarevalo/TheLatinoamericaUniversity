@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+//colores
+@clr-orange: #ff8e73;
+@clr-blue: #4f64b3;
+@clr-black: #000;
+@clr-white: #fff;
+@clr-gray: #222;
+@font: "Noto Sans JP", sans-serif;
+@font-size2: 2rem;
+@font-size1: 1.3rem;
+@font-size3: 0.8rem;
+.hover {
+  color: @clr-orange;
+  text-decoration: underline;
+}
+.info_template {
+  margin: 25px auto;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  background-size: cover;
+  div {
+    background-color: @clr-black;
+    width: 60%;
+    opacity: 0.7;
+    padding: 25px 5px;
+    h4,
+    p,
+    a {
+      font-family: @font;
+      color: @clr-white;
+      margin: 15px 0px;
+    }
+    h4 {
+      font-family: @font-size2;
+      letter-spacing: 5px;
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      .hover;
+    }
+    span {
+      font-size: 15px;
+      margin-left: 10px;
+    }
+  }
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1462536943532-57a629f6cc60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1352&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  nav {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 30px;
+    }
+    button {
+      width: 30px;
+      height: 30px;
+      border: none;
+      background: none;
+      i {
+        font-size: 30px;
+        color: @clr-white;
+      }
+    }
+  }
+  section {
+    position: absolute;
+    width: 80vw;
+    background-color: @clr-gray;
+    padding: 20px;
+    left: -100%;
+    transition: all 1s;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    ul {
+      list-style: none;
+      li {
+        line-height: 30px;
+        margin-inline: 30px;
+        a {
+          text-decoration: none;
+          font-family: @font;
+          color: @clr-white;
+        }
+        a:hover {
+          .hover;
+        }
+      }
+    }
+  }
+  h1 {
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 67vh;
+    font-family: @font;
+    font-weight: 600;
+    font-size: @font-size2;
+    line-height: 40px;
+    color: @clr-white;
+    span {
+      color: @clr-orange;
+    }
+  }
+}
+.add {
+  left: 0%;
+}
+main {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  .main-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .main-info {
+    background: @clr-blue;
+    width: 80%;
+    max-width: 400px;
+    margin: 25px auto;
+    padding: 25px 5px 25px 5px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    img {
+      width: 95%;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+    h2,
+    p {
+      font-family: @font;
+      color: @clr-white;
+      margin: 10px;
+    }
+    h2 {
+      letter-spacing: 3px;
+      line-height: 30px;
+      font-size: @font-size1;
+    }
+    p {
+    }
+  }
+  .carrer {
+    width: 100%;
+    margin-top: 50px;
+    h3 {
+      font-family: @font;
+      font-size: @font-size2;
+      text-align: center;
+      color: @clr-gray;
+    }
+    .carrer-flex {
+      margin-top: 25px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .carrer-chemistry {
+      background-image: url(https://image.freepik.com/free-photo/scientists-drop-yellow-chemicals-into-glass-laboratory_1150-19490.jpg);
+      .info_template;
+    }
+  }
+  .carrer-developer {
+    background-image: url(https://image.freepik.com/free-photo/coding-man_1098-18084.jpg);
+    .info_template;
+  }
+  .carrer-math {
+    background-image: url(https://image.freepik.com/free-photo/closeup-man-writing-arrow-up-graph-increase_53876-14001.jpg?1);
+    .info_template;
+  }
+  .carrer-history {
+    background-image: url(https://image.freepik.com/free-photo/crop-hand-picking-book-from-shelf_23-2147779425.jpg);
+    .info_template;
+  }
+}
+footer {
+  width: 100vw;
+  margin: 0 auto;
+  background: @clr-gray;
+  padding: 25px 0px;
+  margin-top: 50px;
+  h4 {
+    color: @clr-white;
+    font-family: @font;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+  section {
+    margin: 0 auto;
+    width: 50%;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-block: 15px;
+    a {
+      color: @clr-white;
+      font-size: 20px;
+    }
+    a:hover {
+      .hover;
+    }
+  }
+  p {
+    text-align: center;
+    color: @clr-white;
+    font-family: @font;
+    font-size: @font-size3;
+    a {
+      color: @clr-white;
+      font-family: @font;
+      font-size: @font-size3;
+      text-decoration: none;
+    }
+    a:hover {
+      .hover;
+    }
+  }
+}
+@media (min-width: 900px) {
+  nav {
+    button {
+      display: none;
+    }
+  }
+  header {
+    section {
+      top: 1%;
+      left: 50%;
+      width: 30vw;
+      background: none;
+      ul {
+        display: flex;
+        li {
+          a {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1280px) {
+  header {
+    section {
+      top: 1%;
+      left: 60%;
+    }
+  }
+}
+@media (min-width: 1596px) {
+  header {
+    section {
+      top: 1%;
+      left: 70%;
+    }
+  }
+}

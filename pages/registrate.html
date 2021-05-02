@@ -6,23 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registrate</title>
-  <link rel="stylesheet" href="../css/resgistrarse.css">
+  <link rel="stylesheet" href="../css/registrate.css">
+  <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/bd269fc52d.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="../img/toguether.png">
 </head>
 
 <body>
   <header>
     <a href="#">
-      <img src="../img/toguether.svg" alt="Logo de Toguether">
+      <img src="../img/logo.svg" alt="The Lantinoamerica Universtity icom">
     </a>
-    <p>toguether</p>
+    <p>The Lantinoamerica Universtity</p>
+    <div>
+      <button id="nav-button"><i class="fas fa-bars"></i></button>
+    </div>
   </header>
   <main>
     <form action="" class="form headline" id="form">
       <h1 class="form_title">Registrate</h1>
+      <p>Tu Futuro Comienza Aqui</p>
       <section class="form_info">
         <div class="form_info-input">
           <input type="name" placeholder="Name" required id="form_name" autocomplete="name" name="name">
@@ -60,15 +64,15 @@
             <span>Hombre</span>
           </div>
         </div>
-        <div class="form_data">
+        <div class="form_info-data">
           <h2>Fecha de Nacimiento</h2>
           <input type="date" max="2010-01-01" required>
         </div>
         <br>
-        <div class="form_button">
+        <div class="form_info-button">
           <input type="submit" value="Registrate" class="form_input-button">
           <p class="warnings" id="warnings"></p>
-          <a href="../index.html">Iniciar Sesión</a>
+          <a href="IniciarSecion.html">Iniciar Sesión</a>
         </div>
       </section>
     </form>
@@ -78,7 +82,6 @@
     <a href="">Declaración de Privacidad</a>
     <a href="">Centro de Ayuda</a>
   </footer>
-  <script src="../js/resgistrate.js"></script>
 </body>
 
 </html>

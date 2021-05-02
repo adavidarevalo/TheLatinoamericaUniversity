@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import "element/variables.less";
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2017/06/02/17/47/friendship-2366955_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: @font;
+  header {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 15px 0px;
+    img {
+      width: 30px;
+    }
+    p {
+      font-size: @font-size1;
+      font-weight: 500;
+      margin-left: 5px;
+    }
+    div button {
+      width: 35px;
+      height: 35px;
+      margin-block: 10px;
+      background: none;
+      border: none;
+      border-radius: 10px;
+      i {
+        font-size: 30px;
+        color: @clr-gray;
+        margin-block: ;
+      }
+    }
+    button:active {
+      background: @clr-gray;
+      i {
+        color: @clr-white;
+      }
+    }
+  }
+  main {
+    width: 100vw;
+    max-width: 400px;
+    background: @clr-black;
+    opacity: 0.6;
+    border-radius: 10px;
+    color: @clr-white;
+    margin-block: 25px;
+    margin-bottom: 25px;
+    padding-block: 25px;
+    text-align: center;
+    h1 {
+      letter-spacing: 10px;
+    }
+    .form {
+      &_info {
+        margin-top: 25px;
+        &-input {
+          width: 100%;
+          input {
+            width: 70%;
+            border: none;
+            outline: none;
+            font-size: @font-size1;
+            padding: 2px 10px;
+          }
+          ::placeholder {
+            font-size: @font-size1;
+          }
+        }
+        &-sex {
+          display: flex;
+          justify-content: space-around;
+        }
+        &-data {
+          margin-top: 25px;
+          h2 {
+            font-size: @font-size1;
+            margin-bottom: 20px;
+          }
+          input {
+            outline: none;
+            border: none;
+          }
+        }
+        &-button {
+          input {
+            font-family: @font;
+            font-size: @font-size1;
+            padding: 5px 15px;
+            background: @clr-orange;
+            color: @clr-white;
+            border: none;
+            border-radius: 10px;
+          }
+          a {
+            margin-top: 25px;
+            color: @clr-white;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    background: @clr-white;
+    padding: 25px;
+    a {
+      display: inline-block;
+      width: 200px;
+      text-decoration: none;
+      color: @clr-black;
+      margin-block: 5px;
+      margin-inline: 10px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

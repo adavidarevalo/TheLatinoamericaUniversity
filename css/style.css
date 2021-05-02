@@ -48,7 +48,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 25px;
 }
 header nav {
   width: 80%;
@@ -312,7 +311,7 @@ main .carrer-history div span {
   margin-left: 10px;
 }
 footer {
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
   background: #222;
   padding: 25px 0px;
@@ -364,7 +363,7 @@ footer p a:hover {
   header section {
     top: 1%;
     left: 50%;
-    width: 30vw;
+    width: 1vw;
     background: none;
   }
   header section ul {

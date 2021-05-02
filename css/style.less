@@ -2,16 +2,7 @@
   margin: 0;
   padding: 0;
 }
-//colores
-@clr-orange: #ff8e73;
-@clr-blue: #4f64b3;
-@clr-black: #000;
-@clr-white: #fff;
-@clr-gray: #222;
-@font: "Noto Sans JP", sans-serif;
-@font-size2: 2rem;
-@font-size1: 1.3rem;
-@font-size3: 0.8rem;
+@import "element/variables.less";
 .hover {
   color: @clr-orange;
   text-decoration: underline;
@@ -57,7 +48,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 25px;
+
   nav {
     width: 80%;
     margin: 0 auto;
@@ -194,7 +185,7 @@ main {
   }
 }
 footer {
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
   background: @clr-gray;
   padding: 25px 0px;
@@ -237,42 +228,4 @@ footer {
     }
   }
 }
-@media (min-width: 900px) {
-  nav {
-    button {
-      display: none;
-    }
-  }
-  header {
-    section {
-      top: 1%;
-      left: 50%;
-      width: 30vw;
-      background: none;
-      ul {
-        display: flex;
-        li {
-          a {
-            font-weight: 500;
-          }
-        }
-      }
-    }
-  }
-}
-@media (min-width: 1280px) {
-  header {
-    section {
-      top: 1%;
-      left: 60%;
-    }
-  }
-}
-@media (min-width: 1596px) {
-  header {
-    section {
-      top: 1%;
-      left: 70%;
-    }
-  }
-}
+@import "element/media.less";

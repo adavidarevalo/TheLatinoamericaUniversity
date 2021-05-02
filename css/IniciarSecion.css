@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0%;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://cdn.pixabay.com/photo/2019/03/12/12/47/people-4050698_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body header {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-block: 25px;
+}
+body header nav {
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+body header nav img {
+  width: 30px;
+}
+body header nav button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: none;
+  border-radius: 10px;
+}
+body header nav button i {
+  font-size: 30px;
+  color: #fff;
+}
+body header nav button:active {
+  background: #222;
+}
+body header a img {
+  width: 30px;
+}
+body header p {
+  margin-left: 10px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 7px;
+}
+body a {
+  font-family: "Noto Sans JP", sans-serif;
+}
+body .nav-move {
+  width: 200px;
+  background: #222;
+  padding: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  margin: 100px 0px;
+}
+body .nav-move ul {
+  list-style: none;
+}
+body .nav-move ul li {
+  padding: 10px;
+  display: block;
+}
+body .nav-move ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+body .nav-move ul li a:hover {
+  text-decoration: underline;
+  color: #ff8e73;
+}
+body main {
+  width: 100%;
+}
+body main .form {
+  font-family: "Noto Sans JP", sans-serif;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  padding-block: 60px;
+  border-radius: 25px;
+  background: #fff;
+  box-shadow: 10px 10px 1px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 6vh;
+}
+body main .form h1 {
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 8px;
+}
+body main .form_forget {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+body main .form_forget div p {
+  display: inline-block;
+  padding-left: 5px;
+  color: #000;
+}
+body main .form_forget div a {
+  color: #000;
+}
+body main .form_forget a:hover {
+  text-decoration: underline;
+  color: #4f64b3;
+}
+body main .form_social {
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+body main .form_social a {
+  text-decoration: none;
+  color: #000;
+}
+body main .form_social a:hover {
+  text-decoration: underline;
+  color: #ff8e73;
+}
+body main .form_social-gmail,
+body main .form_social-facebook {
+  margin-block: 12px;
+}
+body main .form_social i {
+  margin-right: 10px;
+}
+body main .form_registrarse {
+  text-align: center;
+  margin-top: 50px;
+}
+body main .form_registrarse a {
+  color: #ff8e73;
+}
+.form_input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form_input div input {
+  color: #fff;
+}
+.form_input input {
+  width: 80%;
+  height: 30px;
+  margin-inline: 10px;
+  margin-block: 20px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #222;
+  outline: none;
+  color: #222;
+  padding-left: 10px;
+  font-size: 15px;
+}
+.form_input div input {
+  border: none;
+  width: auto;
+  height: auto;
+  padding: 10px 15px;
+  border-radius: 25px;
+  background: #ff8e73;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.form_input div input:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+::placeholder {
+  color: #222;
+  font-family: "Noto Sans JP", sans-serif;
+}
+footer {
+  background: #fff;
+  height: auto;
+  padding: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer a {
+  padding: 10px 0px;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  width: 250px;
+}
+footer a:hover {
+  color: #ff8e73;
+  text-decoration: underline;
+}
+.add {
+  position: absolute;
+  left: 0px;
+}
+.remove {
+  position: absolute;
+  left: -1000px;
+}

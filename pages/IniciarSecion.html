@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Secion</title>
+  <link rel="stylesheet" href="../css/IniciarSecion.css">
+  <link rel="shortcut icon" href="../img/logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bd269fc52d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body>
+  <header id="header">
+    <nav>
+      <div>
+        <img src="../img/logo.svg" alt="Logo the Latinoamerica University">
+      </div>
+      <div>
+        <button id="nav-button"><i class="fas fa-bars"></i></button>
+      </div>
+    </nav>
+  </header>
+  <section id="navMenuUl" class="nav-move remove">
+    <ul>
+      <li>
+        <a href="#">Inicio</a>
+      </li>
+      <li>
+        <a href="#">Curso</a>
+      </li>
+      <li>
+        <a href="pages/IniciarSecion.html" target="_blank">Registrate</a>
+      </li>
+      <li>
+        <a href="#">Entrar</a>
+      </li>
+    </ul>
+  </section>
+  <main>
+    <form action="" class="form headline" id="form">
+      <h1 class="form_title">Iniciar Sesión</h1>
+      <section class="form_input">
+        <input type="email" placeholder="Correo" required id="form_mail" autocomplete="email" id="email">
+        <input type="password" placeholder="Contraseña" required id="form_password"> <br>
+        <div>
+          <input type="submit" value="Inicias Sesión" class="form_input-button" onclick="mostrarValores()">
+        </div>
+        <p class="warnings" id="warnings"></p>
+      </section>
+      <section class="form_forget">
+        <div>
+          <input type="checkbox" name="" id="">
+          <p>Recordarme</p>
+        </div>
+        <div>
+          <a href="">Olvide mi Contraseña</a>
+        </div>
+      </section>
+      <section class="form_social">
+        <div class="form_social-facebok">
+          <i class="fab fa-facebook"></i>
+          <a href="#">Inicia Secion con Facebook</a>
+        </div>
+        <div class="form_social-gmail">
+          <i class="fas fa-envelope"></i>
+          <a href="#">Inicia Secion con Gmail</a>
+        </div>
+      </section>
+      <section class="form_registrarse">
+        <p>No tienes una cuenta <a href="pages/registrarse.html">Registrate.</a></p>
+      </section>
+    </form>
+  </main>
+  <footer class="body_footer">
+    <a href="">Terminos de uso</a>
+    <a href="">Declaración de Privacidad</a>
+    <a href="">Centro de Ayuda</a>
+  </footer>
+  <script src="../js/IniciarSesion.js"></script>
+</body>
+
+</html>

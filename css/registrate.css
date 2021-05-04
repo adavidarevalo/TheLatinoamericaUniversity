@@ -2,30 +2,57 @@
   margin: 0;
   padding: 0;
 }
+.none {
+  display: none;
+}
 body {
   background-image: url(https://cdn.pixabay.com/photo/2017/06/02/17/47/friendship-2366955_960_720.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Noto Sans JP", sans-serif;
+  background-attachment: fixed;
 }
 body header {
   width: 90%;
   margin: 0 auto;
+}
+body header .header-main {
   display: flex;
   padding: 15px 0px;
+  justify-content: space-between;
+}
+body header .nav-move {
+  background: #222;
+  padding: 30px;
+  width: 200px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: all 1s;
+  z-index: 100;
+}
+body header .nav-move ul {
+  list-style: none;
+}
+body header .nav-move ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+body header .nav-move ul a:hover {
+  text-decoration: underline;
+  color: #ff8e73;
 }
 body header img {
   width: 30px;
 }
 body header p {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 500;
   margin-left: 5px;
 }
 body header div button {
   width: 35px;
   height: 35px;
-  margin-block: 10px;
+  margin-block: 4px;
   background: none;
   border: none;
   border-radius: 10px;
@@ -45,9 +72,10 @@ body main {
   width: 100vw;
   max-width: 400px;
   background: #000;
-  opacity: 0.6;
+  opacity: 0.9;
   border-radius: 10px;
   color: #fff;
+  margin: 0 auto;
   margin-block: 25px;
   margin-bottom: 25px;
   padding-block: 25px;
@@ -65,9 +93,12 @@ body main .form_info-input {
 body main .form_info-input input {
   width: 70%;
   border: none;
-  outline: none;
   font-size: 1.3rem;
   padding: 2px 10px;
+  margin-block: 10px;
+}
+body main .form_info-input input:focus {
+  outline: 2px solid #ff8e73;
 }
 body main .form_info-input ::placeholder {
   font-size: 1.3rem;
@@ -86,6 +117,7 @@ body main .form_info-data h2 {
 body main .form_info-data input {
   outline: none;
   border: none;
+  padding: 5px 10px;
 }
 body main .form_info-button input {
   font-family: "Noto Sans JP", sans-serif;
@@ -95,16 +127,23 @@ body main .form_info-button input {
   color: #fff;
   border: none;
   border-radius: 10px;
+  margin-bottom: 20px;
+}
+body main .form_info-button input:hover {
+  background: #fff;
+  color: #ff8e73;
+}
+body main .form_info-button a:hover {
+  color: #ff8e73;
 }
 body main .form_info-button a {
-  margin-top: 25px;
   color: #fff;
 }
 body footer {
   display: flex;
   flex-wrap: wrap;
   background: #fff;
-  padding: 25px;
+  padding: 15px;
 }
 body footer a {
   display: inline-block;
@@ -116,4 +155,45 @@ body footer a {
 }
 body footer a:hover {
   text-decoration: underline;
+}
+.add {
+  position: absolute;
+  left: 0px;
+}
+.remove {
+  position: absolute;
+  left: -1000px;
+}
+.time-circle,
+.check-circle,
+.correcto,
+.errado {
+  display: none;
+}
+.block {
+  display: block;
+}
+.form_info-false,
+.form_info-mail,
+.form_info-pass,
+.form_info-pass2,
+.time-circle > i,
+.errado > i {
+  color: #a70404;
+}
+.check-circle > i,
+.correcto > i {
+  color: #00bb2d;
+}
+.correcto > i,
+.check-circle > i {
+  position: relative;
+  top: -35px;
+  left: 120px;
+}
+.time-circle > i,
+.errado > i {
+  position: relative;
+  top: -37.4px;
+  left: 120px;
 }

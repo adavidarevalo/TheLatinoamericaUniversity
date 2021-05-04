@@ -15,13 +15,31 @@
 
 <body>
   <header>
-    <a href="#">
-      <img src="../img/logo.svg" alt="The Lantinoamerica Universtity icom">
-    </a>
-    <p>The Lantinoamerica Universtity</p>
-    <div>
-      <button id="nav-button"><i class="fas fa-bars"></i></button>
-    </div>
+    <section class="header-main">
+      <a href="#">
+        <img src="../img/logo.svg" alt="The Lantinoamerica Universtity icom">
+      </a>
+      <p>The Lantinoamerica Universtity</p>
+      <div>
+        <button id="nav-button"><i class="fas fa-bars"></i></button>
+      </div>
+    </section>
+    <section id="nav" class="nav-move remove">
+      <ul>
+        <li>
+          <a href="../index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="#">Curso</a>
+        </li>
+        <li>
+          <a href="pages/IniciarSecion.html" target="_blank" class="none">Registrate</a>
+        </li>
+        <li>
+          <a href="#">Entrar</a>
+        </li>
+      </ul>
+    </section>
   </header>
   <main>
     <form action="" class="form headline" id="form">
@@ -33,25 +51,23 @@
           <div class="check-circle" id="circle">
             <i class="far fa-check-circle" id="check-circle"></i>
           </div>
-          <div class="check-circle" id="times">
+          <div class="time-circle" id="times">
             <i class="far fa-times-circle"></i>
           </div>
           <p id="falseName" class="form_info-false"></p>
           <input type="email" placeholder="Email" required id="form_registrarse-email" autocomplete="email" name="mail">
-          <p id="falseMail" class="form_info-mail">Email Incorrecto</p>
-          <p id="falseName" class="form_info-false"></p>
+          <p id="falseMail" class="form_info-mail"></p>
           <input type="password" placeholder="Password" required id="form_registrarse-password" name="pass1">
-          <p id="falsePass" class="form_info-pass">Password Incorrecto</p>
+          <p id="falsePass" class="form_info-pass"></p>
           <input type="password" placeholder="Repet your Password" required id="form_registrarse-password2"
             name="pass2">
-          <p id="diferentPass" class="form_info-pass2">Password No Coinciden</p>
           <div class="correcto" id="correcto">
             <i class="fas fa-check-circle "></i>
           </div>
           <div class="errado" id="errado">
             <i class="fas fa-times-circle "></i>
           </div>
-
+          <p id="diferentPass" class="form_info-pass2"></p>
         </div>
         <br>
         <div class="form_info-sex">
@@ -82,6 +98,7 @@
     <a href="">Declaración de Privacidad</a>
     <a href="">Centro de Ayuda</a>
   </footer>
+  <script src="../js/registrate.js"></script>
 </body>
 
 </html>

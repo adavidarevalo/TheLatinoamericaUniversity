@@ -1,3 +1,6 @@
+.none {
+  display: none;
+}
 * {
   margin: 0;
   padding: 0%;
@@ -16,12 +19,11 @@ body header {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  margin-block: 25px;
+  margin-block: 15px;
 }
 body header nav {
   width: 80%;
   margin: 0 auto;
-  padding: 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -39,19 +41,14 @@ body header nav button i {
   font-size: 30px;
   color: #fff;
 }
+body header nav button:hover {
+  background: #222;
+}
 body header nav button:active {
   background: #222;
 }
 body header a img {
   width: 30px;
-}
-body header p {
-  margin-left: 10px;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: #fff;
-  padding: 7px;
 }
 body a {
   font-family: "Noto Sans JP", sans-serif;
@@ -63,6 +60,7 @@ body .nav-move {
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
   margin: 100px 0px;
+  transition: all 1s;
 }
 body .nav-move ul {
   list-style: none;
@@ -88,11 +86,11 @@ body main .form {
   height: auto;
   margin: 0 auto;
   padding: 10px;
-  padding-block: 60px;
+  padding-block: 40px;
   border-radius: 25px;
   background: #fff;
   box-shadow: 10px 10px 1px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 6vh;
+  margin-bottom: 2vh;
 }
 body main .form h1 {
   color: #000;
@@ -185,7 +183,7 @@ body main .form_registrarse a {
 footer {
   background: #fff;
   height: auto;
-  padding: 30px 10px;
+  padding: 15px;
   display: flex;
   flex-wrap: wrap;
 }

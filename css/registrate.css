@@ -164,10 +164,10 @@ body footer a:hover {
   position: absolute;
   left: -1000px;
 }
-.time-circle,
-.check-circle,
+.errado,
 .correcto,
-.errado {
+.time-circle,
+.check-circle {
   display: none;
 }
 .block {
@@ -185,15 +185,47 @@ body footer a:hover {
 .correcto > i {
   color: #00bb2d;
 }
-.correcto > i,
-.check-circle > i {
-  position: relative;
-  top: -35px;
-  left: 120px;
+.warnings {
+  color: #00bb2d;
+  margin-bottom: 10px;
 }
-.time-circle > i,
-.errado > i {
-  position: relative;
-  top: -37.4px;
-  left: 120px;
+.time-circle,
+.check-circle {
+  position: absolute;
+  top: 237px;
+}
+.correcto,
+.errado {
+  position: absolute;
+  top: 385px;
+}
+.time-circle,
+.check-circle,
+.correcto,
+.errado {
+  left: 80%;
+}
+@media (min-width: 439px) {
+  .errado,
+  .correcto,
+  .time-circle,
+  .check-circle {
+    left: 70%;
+  }
+}
+@media (min-width: 663px) {
+  .errado,
+  .correcto,
+  .time-circle,
+  .check-circle {
+    left: 60%;
+  }
+}
+@media (min-width: 1315px) {
+  .errado,
+  .correcto,
+  .time-circle,
+  .check-circle {
+    left: 58%;
+  }
 }
